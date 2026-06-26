@@ -8,8 +8,7 @@ def garden_operations(operation_number) -> int:
             open("/non/existent/file")
         case 3:
             print("abc" + 5)
-        case _:
-            return 0
+    return 0
 
 
 def test_error_types() -> None:
