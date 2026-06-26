@@ -5,8 +5,7 @@ def input_temperature(temp_str: str) -> int:
         raise ValueError(f"{temp_int}°C is too hot for plants (max 40°C)")
     elif temp_int < 0:
         raise ValueError(f"{temp_int}°C is too cold for plants (min 0°C)")
-    else:
-        return temp_int
+    return temp_int
 
 
 def test_temperature() -> None:
@@ -15,8 +14,8 @@ def test_temperature() -> None:
     for temp in data_set:
         print()
         try:
-            temp = input_temperature(temp)
-            print(f"Temperature is now {temp}°C")
+            temp_int = input_temperature(temp)
+            print(f"Temperature is now {temp_int}°C")
         except ValueError as e:
             print(f"Caught input_temperature error: {e}")
     print("\nAll tests completed - program didn't crash!")
