@@ -1,4 +1,4 @@
-def garden_operations(operation_number) -> int:
+def garden_operations(operation_number: int) -> int:
     match operation_number:
         case 0:
             int("abc")
